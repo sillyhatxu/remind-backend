@@ -10,12 +10,31 @@
   version = "v0.3.1"
 
 [[projects]]
+  digest = "1:f343e6f508aa6d4d98c55eb9d1e9c0f99f51c34a4921f5b8d6171de7a25d5fa0"
+  name = "github.com/allegro/bigcache"
+  packages = [
+    ".",
+    "queue",
+  ]
+  pruneopts = "UT"
+  revision = "2cf8c0b01a0c01c2c0363d348aa7042f6542ed27"
+  version = "v2.1.1"
+
+[[projects]]
   branch = "master"
   digest = "1:7a9140c806333a78122763d08ec6c0d7358c7fff1df8cfbb01881c5dc46e24e5"
   name = "github.com/armon/go-metrics"
   packages = ["."]
   pruneopts = "UT"
   revision = "ec5e00d3c878b2a97bbe0884ef45ffd1b4f669f5"
+
+[[projects]]
+  digest = "1:ffe9824d294da03b391f44e1ae8281281b4afc1bdaa9588c9097785e3af10cec"
+  name = "github.com/davecgh/go-spew"
+  packages = ["spew"]
+  pruneopts = "UT"
+  revision = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
+  version = "v1.1.1"
 
 [[projects]]
   digest = "1:3ee1d175a75b911a659fbd860060874c4f503e793c5870d13e5a0ede529a63cf"
@@ -37,6 +56,14 @@
   pruneopts = "UT"
   revision = "b75d67cd51eb53c3c3a2fc406524c940021ffbda"
   version = "v1.4.0"
+
+[[projects]]
+  digest = "1:ec6f9bf5e274c833c911923c9193867f3f18788c461f76f05f62bb1510e0ae65"
+  name = "github.com/go-sql-driver/mysql"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "72cd26f257d44c1114970e19afddcd812016007e"
+  version = "v1.4.1"
 
 [[projects]]
   digest = "1:f5ce1529abc1204444ec73779f44f94e2fa8fcdb7aca3c355b0c95947e4005c6"
@@ -184,6 +211,14 @@
   version = "v0.8.1"
 
 [[projects]]
+  digest = "1:0028cb19b2e4c3112225cd871870f2d9cf49b9b4276531f03438a88e94be86fe"
+  name = "github.com/pmezard/go-difflib"
+  packages = ["difflib"]
+  pruneopts = "UT"
+  revision = "792786c7400a136282c1664665ae0a8db921c6c2"
+  version = "v1.0.0"
+
+[[projects]]
   digest = "1:1a23fdd843129ef761ffe7651bc5fe7c5b09fbe933e92783ab06cc11c37b7b37"
   name = "github.com/rifflock/lfshook"
   packages = ["."]
@@ -200,12 +235,12 @@
   version = "v1.0.1"
 
 [[projects]]
-  digest = "1:a498b4b74634ace3e4a202d72122162fd6458890db9a687095c5a1f7d16a2e2a"
+  digest = "1:ffa9cfc1f54a16b0476c81fa2e1f67ab7fd6d0768f414defb11cfabfab768a7d"
   name = "github.com/sillyhatxu/environment-config"
   packages = ["."]
   pruneopts = "UT"
-  revision = "0c3b3c965140252597243a4b3c0e43647dc66aa6"
-  version = "v1.0.6"
+  revision = "5d03cfa8642e231cba40db7eaa8af0453ccd138a"
+  version = "v1.1.2"
 
 [[projects]]
   digest = "1:553232d59cda2f7ed27451b13de678994d885b3acc3fbe52a56b14a4d088d7b6"
@@ -219,6 +254,22 @@
   ]
   pruneopts = "UT"
   revision = "02dd3ebb2db7f96e8272173dec0ae09c7771314b"
+  version = "v1.0.3"
+
+[[projects]]
+  digest = "1:3549ee61d67879617d770a9be8b1255582b222f00d601328281849ed6665e36f"
+  name = "github.com/sillyhatxu/gocache-client"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "9889617a78ba3546bd581904196c0e0f564fec29"
+  version = "v1.0.3"
+
+[[projects]]
+  digest = "1:b4988c94fd28c452ddb306b018ab1d56855ffbf71cbff3cb1d918e653be91be9"
+  name = "github.com/sillyhatxu/id-generator"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "8a6a58da7c4dae42304cdfbce8a8d1d008cdfcc2"
   version = "v1.0.3"
 
 [[projects]]
@@ -237,12 +288,31 @@
   version = "v3.0.3"
 
 [[projects]]
-  branch = "master"
-  digest = "1:23f26d8e9ac8854322b8a8508bfbfb65290f6d77de45c987a191037e4465bf85"
-  name = "github.com/sillyhatxu/user-backend"
-  packages = ["grpc/user"]
+  digest = "1:ab2303b90a316436718cf43652663338c47619c688ded2bef41803365f42fb5b"
+  name = "github.com/sillyhatxu/message-backend"
+  packages = [
+    "grpc/grpcclient",
+    "grpc/message",
+  ]
   pruneopts = "UT"
-  revision = "490374a7a17c1d497d82ab80eb3dd52880499731"
+  revision = "845458f0f0382739db0df47f170ba8d0e55faf58"
+  version = "v0.0.1"
+
+[[projects]]
+  digest = "1:2c192e1fc7ea25fdd136484507b1784a3399fd18d878b2f2f4b0b2b6f1d60144"
+  name = "github.com/sillyhatxu/mysql-client"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c897f095d8d7fadb4c14c024b122c05595ff2338"
+  version = "v1.1.0"
+
+[[projects]]
+  digest = "1:76e0be37969db3c796e3fac2739bc15c0618c6a33ec1670e878eb35fcd79677a"
+  name = "github.com/sillyhatxu/retry-utils"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "f967bf349ac26a6cbad64de926ab176816216004"
+  version = "v1.0.1"
 
 [[projects]]
   digest = "1:04457f9f6f3ffc5fea48e71d62f2ca256637dee0a04d710288e27e05c8b41976"
@@ -251,6 +321,14 @@
   pruneopts = "UT"
   revision = "839c75faf7f98a33d445d181f3018b5c3409a45e"
   version = "v1.4.2"
+
+[[projects]]
+  digest = "1:8548c309c65a85933a625be5e7d52b6ac927ca30c56869fae58123b8a77a75e1"
+  name = "github.com/stretchr/testify"
+  packages = ["assert"]
+  pruneopts = "UT"
+  revision = "221dbe5ed46703ee255b1da0dec05086f5035f62"
+  version = "v1.4.0"
 
 [[projects]]
   digest = "1:5a1cf4e370bc86137b58da2ae065e76526d32b11f62a7665f36dbd5f41fa95ff"
@@ -277,11 +355,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:84ed4fd3f7c52941feec4832e385f61377a01b4c98a0f868f16f10c2469fc0fe"
+  digest = "1:ad4db95959c08a45ec783de77c02282117453185e8720ddb1df701599bc15726"
   name = "golang.org/x/sys"
   packages = ["unix"]
   pruneopts = "UT"
-  revision = "c178f38b412c7b426e4e97be2e75d11ff7b8d4d4"
+  revision = "aed5e4c7ecf9f069775e08834fb724544628d38d"
 
 [[projects]]
   digest = "1:8d8faad6b12a3a4c819a3f9618cb6ee1fa1cfc33253abeeea8b55336721e3405"
@@ -307,6 +385,14 @@
   pruneopts = "UT"
   revision = "342b2e1fbaa52c93f31447ad2c6abc048c63e475"
   version = "v0.3.2"
+
+[[projects]]
+  digest = "1:c25289f43ac4a68d88b02245742347c94f1e108c534dda442188015ff80669b3"
+  name = "google.golang.org/appengine"
+  packages = ["cloudsql"]
+  pruneopts = "UT"
+  revision = "bddb1f54ecfd64b1350fd2dd897fa11d426632bc"
+  version = "v1.6.4"
 
 [[projects]]
   branch = "master"
@@ -381,6 +467,7 @@
   analyzer-version = 1
   input-imports = [
     "github.com/gin-gonic/gin",
+    "github.com/golang/protobuf/ptypes",
     "github.com/sillyhatxu/consul-client",
     "github.com/sillyhatxu/environment-config",
     "github.com/sillyhatxu/gin-utils/codes",
@@ -388,11 +475,16 @@
     "github.com/sillyhatxu/gin-utils/ginerrors",
     "github.com/sillyhatxu/gin-utils/interceptor/loginterceptor",
     "github.com/sillyhatxu/gin-utils/response",
+    "github.com/sillyhatxu/gocache-client",
+    "github.com/sillyhatxu/id-generator",
     "github.com/sillyhatxu/logrus-client",
     "github.com/sillyhatxu/logrus-client/filehook",
     "github.com/sillyhatxu/logrus-client/logstashhook",
-    "github.com/sillyhatxu/user-backend/grpc/user",
+    "github.com/sillyhatxu/message-backend/grpc/grpcclient",
+    "github.com/sillyhatxu/message-backend/grpc/message",
+    "github.com/sillyhatxu/mysql-client",
     "github.com/sirupsen/logrus",
+    "github.com/stretchr/testify/assert",
     "google.golang.org/grpc",
     "google.golang.org/grpc/health",
     "google.golang.org/grpc/health/grpc_health_v1",

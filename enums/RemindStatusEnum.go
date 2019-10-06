@@ -1,8 +1,8 @@
 package enums
 
-type RemindStatus string
+type RemindStatus int
 
 const (
-	RemindStatusEnabled  RemindStatus = "ENABLED"
-	RemindStatusDisabled RemindStatus = "DISABLED"
+	RemindStatusDisabled RemindStatus = iota
+	RemindStatusEnabled
 )

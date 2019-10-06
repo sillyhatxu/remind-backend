@@ -11,7 +11,7 @@ import (
 	"github.com/sillyhatxu/gin-utils/interceptor/loginterceptor"
 	"github.com/sillyhatxu/gin-utils/response"
 	"github.com/sillyhatxu/remind-backend/dto"
-	"github.com/sillyhatxu/remind-backend/service"
+	"github.com/sillyhatxu/remind-backend/service/remindcallback"
 	"github.com/sirupsen/logrus"
 	"net"
 	"net/http"
@@ -72,7 +72,7 @@ func remind(context *gin.Context) {
 		context.JSON(http.StatusOK, ginerrors.Error(codes.InvalidParameter, err.Error()))
 		return
 	}
-	err = service.Check(slackDTO)
+	err = remindcallback.Check(slackDTO)
 	if err != nil {
 		context.JSON(http.StatusOK, ginerrors.Convert(err))
 		return
