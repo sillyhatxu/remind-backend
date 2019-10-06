@@ -38,7 +38,7 @@
 
 [[constraint]]
   name = "github.com/sillyhatxu/gin-utils"
-  version = "1.0.1"
+  version = "1.0.3"
 
 [[constraint]]
   name = "github.com/sillyhatxu/logrus-client"

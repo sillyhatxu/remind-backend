@@ -34,6 +34,7 @@ func init() {
 		logrusconf.FileConfig(filehook.NewFileConfig(config.Conf.Log.FilePath, filehook.Open(config.Conf.Log.OpenLogfile))),
 		logrusconf.LogstashConfig(logstashhook.NewLogstashConfig(config.Conf.LogstashURL, logstashhook.Open(config.Conf.Log.OpenLogstash), logstashhook.Fields(fields))),
 	).Initial()
+	logrus.Infof("config : %#v", config.Conf)
 }
 
 func main() {

@@ -1,6 +1,8 @@
 package api
 
 import (
+	"bufio"
+	"bytes"
 	"encoding/json"
 	"github.com/gin-gonic/gin"
 	"github.com/sillyhatxu/gin-utils/codes"
@@ -34,6 +36,17 @@ func SetupRouter() *gin.Engine {
 		remindGroup.POST("", remind)
 	}
 	return router
+}
+
+type bufferedWriter struct {
+	gin.ResponseWriter
+	out    *bufio.Writer
+	Buffer bytes.Buffer
+}
+
+func (g *bufferedWriter) Write(data []byte) (int, error) {
+	g.Buffer.Write(data)
+	return g.out.Write(data)
 }
 
 func remind(context *gin.Context) {

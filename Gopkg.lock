@@ -208,7 +208,7 @@
   version = "v1.0.6"
 
 [[projects]]
-  digest = "1:96780ed98c1b3912e3a227260961586a6f49855ec846a660872a63b183d5ee53"
+  digest = "1:553232d59cda2f7ed27451b13de678994d885b3acc3fbe52a56b14a4d088d7b6"
   name = "github.com/sillyhatxu/gin-utils"
   packages = [
     "codes",
@@ -218,8 +218,8 @@
     "response",
   ]
   pruneopts = "UT"
-  revision = "549dd01279aea330d7abc3e59534646f31d17672"
-  version = "v1.0.2"
+  revision = "02dd3ebb2db7f96e8272173dec0ae09c7771314b"
+  version = "v1.0.3"
 
 [[projects]]
   digest = "1:978fe32a9d22bd70882f00fd834e066ec41fbc0b2b1d0225fb97fd2f13207e82"
@@ -384,6 +384,7 @@
     "github.com/sillyhatxu/consul-client",
     "github.com/sillyhatxu/environment-config",
     "github.com/sillyhatxu/gin-utils/codes",
+    "github.com/sillyhatxu/gin-utils/entity",
     "github.com/sillyhatxu/gin-utils/ginerrors",
     "github.com/sillyhatxu/gin-utils/interceptor/loginterceptor",
     "github.com/sillyhatxu/gin-utils/response",
