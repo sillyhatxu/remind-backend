@@ -39,3 +39,11 @@ func TestInsertRemind(t *testing.T) {
 		assert.Nil(t, err)
 	}
 }
+
+func TestFindAllRemindList(t *testing.T) {
+	res, err := FindAllRemindList()
+	if err != nil {
+		panic(err)
+	}
+	assert.EqualValues(t, len(res), 2)
+}

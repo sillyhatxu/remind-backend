@@ -1,6 +1,9 @@
 package dao
 
-import "github.com/sillyhatxu/remind-backend/model"
+import (
+	"github.com/sillyhatxu/remind-backend/enums"
+	"github.com/sillyhatxu/remind-backend/model"
+)
 
 const insertRemindSQL = `
 	insert into remind (remind_time, remind_type, remind_data, remind_advance, remind_frequency, is_lunar, status) 
@@ -13,12 +16,12 @@ func InsertRemind(input *model.Remind) error {
 }
 
 const findAllRemindListSQL = `
-	SELECT * FROM remind
+	SELECT * FROM remind where status = ?
 `
 
 func FindAllRemindList() ([]model.Remind, error) {
 	var array []model.Remind
-	err := client.FindList(findAllRemindListSQL, &array)
+	err := client.FindList(findAllRemindListSQL, &array, enums.RemindStatusEnabled)
 	if err != nil {
 		return nil, err
 	}
