@@ -7,11 +7,14 @@ branches: # build only on these branches
   only:
     - master
 
+env:
+  - IMAGE_TAG=1.4
+
 jobs:
   include:
     - stage: build docker image
       script:
         - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
         - docker build -t $DOCKER_USERNAME/$PROJECT_NAME .
-        - docker tag $DOCKER_USERNAME/$PROJECT_NAME:latest $DOCKER_USERNAME/$PROJECT_NAME:1.4
-        - docker push $DOCKER_USERNAME/$PROJECT_NAME:1.4
+        - docker tag $DOCKER_USERNAME/$PROJECT_NAME:latest $DOCKER_USERNAME/$PROJECT_NAME:$IMAGE_TAG
+        - docker push $DOCKER_USERNAME/$PROJECT_NAME:$IMAGE_TAG
