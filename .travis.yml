@@ -1,7 +1,11 @@
 language: go
 
 go:
-  - master
+  - 1.13.x
+
+branches: # build only on these branches
+  only:
+    - master
 
 jobs:
   include:
